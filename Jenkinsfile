@@ -12,6 +12,7 @@ pipeline {
         GIT_URL = 'https://github.com/raefkh/Devops.git'
         GIT_BRANCH = 'Devops'
         CREDENTIALS_ID = 'GitHub_Credentials'
+
     }
 
     stages {
