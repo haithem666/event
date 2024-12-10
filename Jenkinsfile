@@ -11,7 +11,7 @@ pipeline {
     environment {
         GIT_URL = 'https://github.com/raefkh/Devops.git'
         GIT_BRANCH = 'devops'
-        CREDENTIALS_ID = 'GitHub_Credentials'
+        CREDENTIALS_ID = 'GitHub_Credential'
     }
 
 
