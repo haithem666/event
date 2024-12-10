@@ -10,10 +10,10 @@ pipeline {
 
     environment {
         GIT_URL = 'https://github.com/raefkh/Devops.git'
-        GIT_BRANCH = 'Devops'
+        GIT_BRANCH = 'devops'
         CREDENTIALS_ID = 'GitHub_Credentials'
-
     }
+
 
     stages {
         stage('Checkout Code') {
