@@ -12,6 +12,8 @@ pipeline {
         GIT_URL = 'https://github.com/raefkh/Devops.git'
         GIT_BRANCH = 'devops'
         CREDENTIALS_ID = 'GitHub_Credential'
+        SONAR_TOKEN = credentials('SonarQube_Token')
+
     }
 
 
@@ -38,5 +40,15 @@ pipeline {
                 sh 'mvn clean package'  // This will compile and package the JAR
             }
         }
+           stage('Mockito Tests') {
+                            steps {
+                                sh 'mvn test'
+                            }
+                        }
+                stage('SonarQube Analysis') {
+                              steps {
+                                   sh 'mvn sonar:sonar'
+                                  }
+                              }
     }
 }
