@@ -50,5 +50,14 @@ pipeline {
                                    sh 'mvn sonar:sonar'
                                   }
                               }
+                               stage('Deploy to Nexus') {
+                                                                  steps {
+                                                                      script {
+                                                                          withEnv(["PATH+MAVEN=${MAVEN_HOME}/bin"]) {
+                                                                              sh 'mvn deploy -s /usr/share/maven/conf/settings.xml'
+                                                                          }
+                                                                      }
+                                                                  }
+                                                              }
     }
 }
