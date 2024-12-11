@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: raef801/alpine:1.0.0
+    image: alpine-container
     build: ./  # Build context
     container_name: app_container
     ports:
