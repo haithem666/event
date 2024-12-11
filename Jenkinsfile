@@ -13,7 +13,7 @@ pipeline {
         GIT_BRANCH = 'devops'
         CREDENTIALS_ID = 'GitHub_Credential'
         SONAR_TOKEN = credentials('SonarQube_Token')
-        DOCKER_IMAGE_NAME = 'raef/alpine'
+        DOCKER_IMAGE_NAME = 'raef801/alpine'
 
 
     }
