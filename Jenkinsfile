@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        GIT_URL = 'https://github.com/raefkh/Devops.git'
+        GIT_URL = 'https://github.com/haithem666/event.git'
         GIT_BRANCH = 'devops'
         CREDENTIALS_ID = 'GitHub_Cred'
         SONAR_TOKEN = credentials('SonarQube_Token')
