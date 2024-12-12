@@ -9,10 +9,10 @@ pipeline {
     environment {
         GIT_URL = 'https://github.com/raefkh/Devops.git'
         GIT_BRANCH = 'devops'
-        CREDENTIALS_ID = 'GitHub_Credential'
+        CREDENTIALS_ID = 'GitHub_Cred'
         SONAR_TOKEN = credentials('SonarQube_Token')
-        DOCKER_IMAGE_NAME = 'raef801/alpine'
-        DOCKER_CREDENTIALS_ID = 'Docker_Credentials'
+        DOCKER_IMAGE_NAME = 'haithem801/alpine'
+        DOCKER_CREDENTIALS_ID = 'Docker_Cred'
     }
 
     stages {
