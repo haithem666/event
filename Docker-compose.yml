@@ -4,7 +4,7 @@ services:
   app:
     image: alpine-container
     build: ./  # Build context
-    container_name: app_container
+    container_name: app_container_new
     ports:
       - "8089:8089"  # Serveur configuré sur le port 8089
     environment:
